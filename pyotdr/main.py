@@ -1,6 +1,9 @@
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import logging
 import argparse
+
 from pyotdr.dump import tofile, ExportDataType
 from pyotdr.read import sorparse
 
