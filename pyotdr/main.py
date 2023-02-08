@@ -1,6 +1,8 @@
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 import logging
 import argparse
 
@@ -49,3 +51,5 @@ def main():
     with open(opfile, "w") as output:
         for xy in tracedata:
             output.write(xy)
+
+main()

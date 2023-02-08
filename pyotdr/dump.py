@@ -30,7 +30,7 @@ def tofile(results, logfile, format: ExportDataType = ExportDataType.JSON):
     """
 
     if format == ExportDataType.JSON:
-        json.dump(results, logfile, sort_keys=True, indent=8, separators=(",", ": "))
+        json.dump(results, logfile, sort_keys=False, indent=8, separators=(",", ": "))
     elif format == ExportDataType.XML:
         newresults = replace_keys(results)
         logfile.write(
